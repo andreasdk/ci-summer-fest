@@ -92,9 +92,9 @@ body {
 /*Navbar Classes*/
 
 .logo {
-    height: 5rem;
-    position: relative;
-    top: 0;
+  height: 5rem;
+  position: relative;
+  top: 0;
 }
 /**Changes navbar toggler background to circle**/
 .navbar-toggler {
