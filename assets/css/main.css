@@ -91,6 +91,11 @@ body {
 
 /*Navbar Classes*/
 
+.logo {
+    height: 5rem;
+    position: relative;
+    top: 0;
+}
 /**Changes navbar toggler background to circle**/
 .navbar-toggler {
   background-color: #f7f7f7;
@@ -123,6 +128,24 @@ body {
 .nav-link span {
   display: inline-block;
   margin-right: 1.5rem;
+}
+
+/* Hero */
+video #bgvideo {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-ms-transform: translateX(-50%) translateY(-50%);
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(assets/images/dancers.jpg) no-repeat;
+background-size: cover;
 }
 
 /* Footer styles */
