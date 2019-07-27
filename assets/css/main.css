@@ -1,26 +1,53 @@
+/*CSS Variables*/
+
+:root {
+    --primarycolor: #D72F01;
+    --secondarycolor: #F09E8C;
+    --lightcolor: #F4D9C1;
+    --backgroundcolor: #FB8937;
+    --primaryfont: 'Montserrat', sans-serif;
+    --secondaryfont: 'Merriweather', serif;
+}
+
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body {
+  background-color: var(--lightcolor);
+  font-family: var(--primaryfont);
+  font-weight: 400;
+  line-height: 1.7;
   overflow-x: hidden;
 }
+
 /*Headings*/
+
 .heading-secondary {
-  color: black;
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
+
+    color: var(--primarycolor);
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+
 /*Buttons*/
+
 .btn {
-  border-radius: 10rem;
-  display: inline-block;
-  font-size: 1.5rem;
-  padding: 1.5rem 4rem;
-  text-decoration: none;
-  text-transform: uppercase;
+    border-radius: 10rem;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
 /**Gives slight box-shadow on hover**/
+
 .btn:hover {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn--green {
@@ -29,28 +56,29 @@ html {
 }
 
 /*Utility Classes*/
+
 .u-center-text {
-  text-align: center;
+    text-align: center;
 }
 
 .u-margin-bottom-large {
-  margin-bottom: 8rem;
+    margin-bottom: 8rem;
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .u-padding-bottom-small {
-  padding-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .u-padding-top {
-  padding-top: 2rem;
+    padding-top: 2rem;
 }
 
 .footer-social-icons {
@@ -112,7 +140,8 @@ footer div div ul li i {
     left: 0;
     top: 0;
     z-index: 9999;
-}
+    opacity: 0;
+    visibility: hidden;
 
 .popup_content {
     border-radius: 3px;
@@ -155,7 +184,7 @@ footer div div ul li i {
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
-    hyphens:auto;
+    hyphens: auto;
 }
 
 @media only screen and (max-width: 600px) {
