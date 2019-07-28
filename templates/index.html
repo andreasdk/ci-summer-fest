@@ -1,250 +1,244 @@
-{% extends 'layout.html' %}
+{% extends 'layout.html' %} {% block body %}
 
-{% block body %}
+<!--Hero Section-->
+<header class="header">
+    <div class="text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary-main">CI Summer Festival</span>
+            <span class="heading-primary-sub">The Party Starts Here</span>
+        </h1>
+    </div>
+</header>
+
+
+<section class="container-fluid px-0">
+    <h2 class="heading-secondary u-center-text u-margin-bottom-large u-padding-top">Lineup</h2>
+    <div class="row">
+        <div class="col-6">
+            <h3 class="heading-tertiary text-center">Artist Name</h3>
+        </div>
+        <div class="col-6">
+
+            <img src="static/assets/images/festival.jpg" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+<img src="static/assets/images/festival.jpg" class="img-fluid">
+</div>
+</div>
+</section>
 
 
 
+<section id="location" .z-depth-5>
+    <h2>WHERE IS IT</h2>
+    <div id="map"></div>
+</section>
+<hr class="spacer ">
+<section id="contactus" .z-depth-5>
 
-   	<!--Hero Section-->
-	<header class="header">
-		<div class="text-box">
-			<h1 class="heading-primary">
-				<span class="heading-primary-main">CI Summer Festival</span>
-				<span class="heading-primary-sub">The Party Starts Here</span>
-			</h1>
-		</div>	
-	</header>
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
 
-    
-    <section class="container-fluid px-0">
-        <h2 class="heading-secondary u-center-text u-margin-bottom-large u-padding-top">Lineup</h2>
+        <!--Section heading-->
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+
         <div class="row">
-            <div class="col-6">
-                <h3 class="heading-tertiary text-center">Artist Name</h3>
-            </div>
-            <div class="col-6">
 
-                <img src="static/assets/images/festival.jpg" class="img-fluid">
-            </div>
-        </div>
-    </section>
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-                <img src="assets/images/festival.jpg" class="img-fluid">
-            </div>
-        </div>
-    </section>
+                    <!--Grid row-->
+                    <div class="row">
 
-
-
-    <section id="location" .z-depth-5>
-        <h2>WHERE IS IT</h2>
-        <div id="map"></div>
-    </section>
-    <hr class="spacer ">
-    <section id="contactus" .z-depth-5>
-
-        <!--Section: Contact v.2-->
-        <section class="mb-4">
-
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-            <!--Section description-->
-            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
-
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Your name</label>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Your email</label>
-                                </div>
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Subject</label>
-                                </div>
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
                             </div>
                         </div>
-                        <!--Grid row-->
+                        <!--Grid column-->
 
-                        <!--Grid row-->
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-12">
-
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                    <label for="message">Your message</label>
-                                </div>
-
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
                             </div>
                         </div>
-                        <!--Grid row-->
+                        <!--Grid column-->
 
-                 
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+
 
                     <div class="text-center text-md-left">
                         <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
                     </div>
                     <div class="status"></div>
-                </div>
-                   </form>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                            <p>STOCKHOLM, TP 94126, SWEDEN</p>
-                        </li>
-
-                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                            <p>+ 46 234 567 89</p>
-                        </li>
-
-                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                            <p>contact@frank.com</p>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
             </div>
 
-        </section>
-        <!--Section: Contact v.2-->
+            </form>
 
-    </section>
-    <hr class="spacer ">
+            <!--Grid column-->
 
-    <!--end frankkode-->
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>STOCKHOLM, TP 94126, SWEDEN</p>
+                    </li>
 
-    <footer class="container">
-        <div class="row">
-            <div class="col-12">
-                <ul class="footer-social-icons">
-                    <li class="list-icon"><i class="fab fa-twitter"></i></li>
-                    <li class="list-icon"><i class="fab fa-spotify"></i></li>
-                    <li class="list-icon"><i class="fab fa-instagram"></i></li>
-                    <li class="list-icon"><i class="fab fa-facebook"></i></li>
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+ 46 234 567 89</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>contact@frank.com</p>
+                    </li>
                 </ul>
             </div>
+            <!--Grid column-->
+
         </div>
-    </footer>
 
-    <!-- Modal popup -->
+    </section>
+    <!--Section: Contact v.2-->
 
-    <div class="popup">
-        <div class="popup_content">
-            <div class="popup_left">
-                <img src="static/assets/images/rosalia-1.jpg" alt="artist photo" class="popup_img">
-                <img src="static/assets/images/rosalia-2.jpg" alt="artist photo" class="popup_img">
-            </div>
-            <div class="popup_right">
-                <h2 class="heading-secondary u-margin-bottom-medium">Rosalía</h2>
+</section>
+<hr class="spacer ">
 
-                <p class="popup_text">Rosalía always had a vision: to open an unexplored path based on the flamenco tradition but that completely redefines new pop music.
-                At a time where linguistic barriers are breaking down and non-English spoken music is acquiring global predominance, this artist from Sant Esteve Sesrovires has not settled with reinventing a conceptual imagery and aesthetic,
-                but has also gone for boundless transcendental experimentation hand in hand with El Guincho.</p>
-              
-                <a href="https://open.spotify.com/album/355bjCHzRJztCzaG5Za4gq" class="btn btn--green">Stream Now</a>
-            </div>
+<!--end frankkode-->
+
+<footer class="container">
+    <div class="row">
+        <div class="col-12">
+            <ul class="footer-social-icons">
+                <li class="list-icon"><i class="fab fa-twitter"></i></li>
+                <li class="list-icon"><i class="fab fa-spotify"></i></li>
+                <li class="list-icon"><i class="fab fa-instagram"></i></li>
+                <li class="list-icon"><i class="fab fa-facebook"></i></li>
+            </ul>
         </div>
     </div>
+</footer>
+
+<!-- Modal popup -->
+
+<div class="popup">
+    <div class="popup_content">
+        <div class="popup_left">
+            <img src="static/assets/images/rosalia-1.jpg" alt="artist photo" class="popup_img">
+            <img src="static/assets/images/rosalia-2.jpg" alt="artist photo" class="popup_img">
+        </div>
+        <div class="popup_right">
+            <h2 class="heading-secondary u-margin-bottom-medium">Rosalía</h2>
+
+            <p class="popup_text">Rosalía always had a vision: to open an unexplored path based on the flamenco tradition but that completely redefines new pop music. At a time where linguistic barriers are breaking down and non-English spoken music is acquiring global predominance,
+                this artist from Sant Esteve Sesrovires has not settled with reinventing a conceptual imagery and aesthetic, but has also gone for boundless transcendental experimentation hand in hand with El Guincho.</p>
+
+            <a href="https://open.spotify.com/album/355bjCHzRJztCzaG5Za4gq" class="btn btn--green">Stream Now</a>
+        </div>
+    </div>
+</div>
 
 
 
-    <!--map script-->
+<!--map script-->
 
 
-    <script>
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: {
-                    lat: 59.362170,
-                    lng: 18.057896
-                }
-            });
-            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
-            var locations = [{
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: {
                 lat: 59.362170,
                 lng: 18.057896
-            }];
-            var markers = locations.map(function(location, i) {
-                return new google.maps.Marker({
-                    position: location,
-                    label: labels[i % labels.length]
-                });
+            }
+        });
+        var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+        var locations = [{
+            lat: 59.362170,
+            lng: 18.057896
+        }];
+        var markers = locations.map(function(location, i) {
+            return new google.maps.Marker({
+                position: location,
+                label: labels[i % labels.length]
             });
-            var markerCluster = new MarkerClusterer(map, markers, {
-                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-            });
+        });
+        var markerCluster = new MarkerClusterer(map, markers, {
+            imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+        });
+    }
+</script>
+
+
+<!--scroll script-->
+
+
+<script>
+    //scroll to the map
+    window.smoothScroll = function(target) {
+        var scrollContainer = target;
+        do { //find scroll container
+            scrollContainer = scrollContainer.parentNode;
+            if (!scrollContainer) return;
+            scrollContainer.scrollTop += 1;
+        } while (scrollContainer.scrollTop == 0);
+        var targetY = 0;
+        do { //find the top of target relatively to the container
+            if (target == scrollContainer) break;
+            targetY += target.offsetTop;
+        } while (target = target.offsetParent);
+        scroll = function(c, a, b, i) {
+            i++;
+            if (i > 30) return;
+            c.scrollTop = a + (b - a) / 30 * i;
+            setTimeout(function() {
+                scroll(c, a, b, i);
+            }, 20);
         }
-    </script>
+        // start scrolling
+        scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+    }
+</script>
 
-
-    <!--scroll script-->
-
-
-    <script>
-        //scroll to the map
-        window.smoothScroll = function(target) {
-            var scrollContainer = target;
-            do { //find scroll container
-                scrollContainer = scrollContainer.parentNode;
-                if (!scrollContainer) return;
-                scrollContainer.scrollTop += 1;
-            } while (scrollContainer.scrollTop == 0);
-            var targetY = 0;
-            do { //find the top of target relatively to the container
-                if (target == scrollContainer) break;
-                targetY += target.offsetTop;
-            } while (target = target.offsetParent);
-            scroll = function(c, a, b, i) {
-                    i++;
-                    if (i > 30) return;
-                    c.scrollTop = a + (b - a) / 30 * i;
-                    setTimeout(function() {
-                        scroll(c, a, b, i);
-                    }, 20);
-                }
-                // start scrolling
-            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-        }
-    </script>
-
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6pdCrVsqA6Rtqsj4NdUhnxN4kLAmQtAM&callback=initMap">
-    </script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6pdCrVsqA6Rtqsj4NdUhnxN4kLAmQtAM&callback=initMap">
+</script>
 
 
 {% endblock %}
-
