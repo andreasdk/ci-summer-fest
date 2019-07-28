@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,90 +6,187 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CI Summer Fest</title>
 
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
+
     <!-- Font Awesome -->
-   <script src="https://kit.fontawesome.com/c0980300d2.js"></script>
-   
-   <!-- Google Fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet"> 
-   
-   <!-- Our styles -->
-   <link rel="stylesheet" href="{{ url_for('static', filename="assets/css/main.css") }}" type="text/css" />
-   
+    <script src="https://kit.fontawesome.com/c0980300d2.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Our styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename="assets/css/main.css") }}" type="text/css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
-<!--Navbar Section-->
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar__summer">
-		<a class="navbar-brand" href="#">
-			<img src="static/assets/images/logo.png"  alt="Logo" class="logo">
-		</a>
-		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!--Navbar Section-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar__summer">
+        <a class="navbar-brand" href="#">
+            <img src="static/assets/images/logo.png" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navLinks">
-			<ul class="navbar-nav">
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-					<a class="nav-link" href="#how"><span><i class="fas fa-music"></i></span>Lineup</a>
-				</li>
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-					<a class="nav-link" href="#filter"><span><i class="fas fa-ticket-alt"></i></span>Tickets</a>
-				</li>
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-					<a class="nav-link" href="#filter"><span><i class="fas fa-map-marked"></i></span>Location</a>
-				</li>
-				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-					<a class="nav-link" href="#filter"><span><i class="fas fa-pen-alt"></i></span>Contact</a>
-				</li>
-			</ul>
-		</div>
-		<div class="container">
-        {% include 'includes/_login.html'%}
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
-          Login
-        </button>
-        
-        {% include 'includes/_register.html'%}
-         <!--Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">
-          Register
-        </button>        
-    </div>
-	</nav>
-	
-	<!--Hero Section-->
-	<header class="header">
-		<div class="text-box">
-			<h1 class="heading-primary">
-				<span class="heading-primary-main">CI Summer Festival</span>
-				<span class="heading-primary-sub">The Party Starts Here</span>
-			</h1>
-		</div>	
-	</header>
-	
-	 <!-- Lineup section -->
-    <section class="container-fluid px-0">
-        <h2 class="heading-secondary u-center-text u-margin-bottom-large u-padding-top">Lineup</h2>
-        <div class="row">
-            <div class="col-6">
-                <h3 class="heading-tertiary text-center">Artist Name</h3>
-            </div>
-            <div class="col-6">
-                <img src="assets/images/festival.jpg" class="img-fluid">
-            </div>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#how"><span><i class="fas fa-music"></i></span>Lineup</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#filter"><span><i class="fas fa-ticket-alt"></i></span>Tickets</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#filter"><span><i class="fas fa-map-marked"></i></span>Location</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    <a class="nav-link" href="#filter"><span><i class="fas fa-pen-alt"></i></span>Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+
+    <!--Hero Section-->
+    <header class="header">
+        <video playsinline autoplay muted loop poster="static/assets/images/dancers.jpg" id="bgvideo">
+        <source src="static/assets/videos/dancers.mp4" type="video/mp4">
+        <source src="static/assets/videos/dancers.webm" type="video/webm"> 
+        <source src="static/assets/videos/dancers.ogv" type="video/ogv">
+        </video>
+    </header>
+
+
+    <section id="location" .z-depth-5>
+        <h2>WHERE IS IT</h2>
+        <div id="map"></div>
+
     </section>
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+    <hr class="spacer ">
+
+    <section id="contactus" .z-depth-5>
+
+        <!--Section: Contact v.2-->
+        <section class="mb-4">
+
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>STOCKHOLM, TP 94126, SWEDEN</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+ 46 234 567 89</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contact@frank.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+            </div>
+
+        </section>
+        <!--Section: Contact v.2-->
+
+    </section>
+    <hr class="spacer ">
+
+    <!--end frankkode-->
+
+
+
+
+
+
+
+
     <footer class="container">
         <div class="row">
             <div class="col-12">
@@ -103,29 +199,113 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Modal popup -->
-    
+
     <div class="popup">
         <div class="popup_content">
             <div class="popup_left">
-                <img src="assets/images/rosalia-1.jpg" alt="artist photo" class="popup_img">
-                <img src="assets/images/rosalia-2.jpg" alt="artist photo" class="popup_img">
+                <img src="static/assets/images/rosalia-1.jpg" alt="artist photo" class="popup_img">
+                <img src="static/assets/images/rosalia-2.jpg" alt="artist photo" class="popup_img">
             </div>
             <div class="popup_right">
                 <h2 class="heading-secondary u-margin-bottom-medium">Rosalía</h2>
-                <p class="popup_text">Rosalía always had a vision: to open an unexplored path based on the flamenco tradition but that completely redefines new pop music. 
-                At a time where linguistic barriers are breaking down and non-English spoken music is acquiring global predominance, this artist from Sant Esteve Sesrovires has not settled with reinventing a conceptual imagery and aesthetic, 
-                but has also gone for boundless transcendental experimentation hand in hand with El Guincho.</p>
+                <p class="popup_text">Rosalía always had a vision: to open an unexplored path based on the flamenco tradition but that completely redefines new pop music. At a time where linguistic barriers are breaking down and non-English spoken music is acquiring global
+                    predominance, this artist from Sant Esteve Sesrovires has not settled with reinventing a conceptual imagery and aesthetic, but has also gone for boundless transcendental experimentation hand in hand with El Guincho.</p>
                 <a href="https://open.spotify.com/album/355bjCHzRJztCzaG5Za4gq" class="btn btn--green">Stream Now</a>
             </div>
         </div>
     </div>
-    
-    
+
+    <!--map script-->
+
+
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: {
+                    lat: 59.362170,
+                    lng: 18.057896
+                }
+            });
+            var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+            var locations = [{
+                lat: 59.362170,
+                lng: 18.057896
+            }];
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        }
+    </script>
+
+
+    <!--scroll script-->
+
+
+    <script>
+        //scroll to the map
+        window.smoothScroll = function(target) {
+            var scrollContainer = target;
+            do { //find scroll container
+                scrollContainer = scrollContainer.parentNode;
+                if (!scrollContainer) return;
+                scrollContainer.scrollTop += 1;
+            } while (scrollContainer.scrollTop == 0);
+            var targetY = 0;
+            do { //find the top of target relatively to the container
+                if (target == scrollContainer) break;
+                targetY += target.offsetTop;
+            } while (target = target.offsetParent);
+            scroll = function(c, a, b, i) {
+                    i++;
+                    if (i > 30) return;
+                    c.scrollTop = a + (b - a) / 30 * i;
+                    setTimeout(function() {
+                        scroll(c, a, b, i);
+                    }, 20);
+                }
+                // start scrolling
+            scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+        }
+    </script>
+
+
+
+
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6pdCrVsqA6Rtqsj4NdUhnxN4kLAmQtAM&callback=initMap">
+    </script>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+
+
+
+
+
+
+
+
+
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
