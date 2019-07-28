@@ -317,13 +317,13 @@
 
 
 #map {
-  height: 50rem; 
+  height: 42rem; 
 }
 
 
 .text-input {
     font-family: inherit;
-    font-size: 5rem;
+    font-size: 1.2rem;
     margin-top: 2rem;
     padding: 2rem 2rem;
     width: 100%; 
@@ -341,10 +341,13 @@
     /* section background*/
     #contactus {
         background-color: #daa62b;
+        height: 100vh;
+        padding-top: 4rem;
     }
     #location {
         background-color: greenyellow;
         height: 100vh;
+        padding-top: 4rem;
     }
     /*margin right left body*/
 
