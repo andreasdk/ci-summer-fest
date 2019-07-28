@@ -20,13 +20,17 @@
     <!-- Our styles -->
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet"> 
+   
+   <!-- Our styles -->
+   <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
-
 
 </head>
 
@@ -65,11 +69,15 @@
         <source src="assets/videos/dancers.webm" type="video/webm"> 
         <source src="assets/videos/dancers.ogv" type="video/ogv">
         </video>
-    </header>
 
+	</header>
+	  <hr class="spacer ">
+	
+    <section id="location" >
+   <h2> WHERE IS IT </h2>
+      <section id="location">
+      
 
-    <section id="location" .z-depth-5>
-        <h2>WHERE IS IT</h2>
         <div id="map"></div>
 
     </section>
@@ -78,7 +86,8 @@
 
     <hr class="spacer ">
 
-    <section id="contactus" .z-depth-5>
+    <section id="contactus">
+
 
         <!--Section: Contact v.2-->
         <section class="mb-4">
@@ -157,7 +166,11 @@
                 <div class="col-md-3 text-center">
                     <ul class="list-unstyled mb-0">
                         <li><i class="fas fa-map-marker-alt fa-2x"></i>
+
+                           
+
                             <p>STOCKHOLM, TP 94126, SWEDEN</p>
+
                         </li>
 
                         <li><i class="fas fa-phone mt-4 fa-2x"></i>
@@ -178,15 +191,6 @@
 
     </section>
     <hr class="spacer ">
-
-    <!--end frankkode-->
-
-
-
-
-
-
-
 
     <footer class="container">
         <div class="row">
@@ -218,10 +222,14 @@
         </div>
     </div>
 
-    <!--map script-->
-
-
-    <script>
+    
+    
+     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6pdCrVsqA6Rtqsj4NdUhnxN4kLAmQtAM&callback=initMap">
+    </script>
+ <!--map script-->
+      <script>
         function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 15,
@@ -231,16 +239,29 @@
                 }
             });
             var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
+
+            var locations = [
+                {
+                    lat: 59.362170,
+                    lng: 18.057896
+                }
+            ];
+
             var locations = [{
                 lat: 59.362170,
                 lng: 18.057896
             }];
+
             var markers = locations.map(function(location, i) {
                 return new google.maps.Marker({
                     position: location,
                     label: labels[i % labels.length]
                 });
             });
+
+            var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+        }
+    </script>
             var markerCluster = new MarkerClusterer(map, markers, {
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
             });
@@ -278,9 +299,6 @@
         }
     </script>
 
-
-
-
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6pdCrVsqA6Rtqsj4NdUhnxN4kLAmQtAM&callback=initMap">
@@ -295,18 +313,13 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
 
-
-
-
-
-
-
-
-
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+    
+    
+    
+    </body>
 
 </html>
