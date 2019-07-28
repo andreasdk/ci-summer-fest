@@ -65,10 +65,17 @@ body {
 }
 
 .heading-tertiary {
+
     color: var(--secondarycolor);
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
+=======
+  color: var(--backgroundcolor);
+  font-size: 1.8rem;
+  font-weight:700;
+  text-transform: uppercase;
+
 }
 
 
