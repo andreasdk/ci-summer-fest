@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
 
     <!-- Our styles -->
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename="assets/css/main.css") }}" type="text/css" />
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -34,7 +34,7 @@
     <!--Navbar Section-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar__summer">
         <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.png" alt="Logo" class="logo">
+            <img src="static/assets/images/logo.png" alt="Logo" class="logo">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -59,10 +59,10 @@
 
     <!--Hero Section-->
     <header class="header">
-        <video playsinline autoplay muted loop poster="assets/images/dancers.jpg" id="bgvideo">
-        <source src="assets/videos/dancers.mp4" type="video/mp4">
-        <source src="assets/videos/dancers.webm" type="video/webm"> 
-        <source src="assets/videos/dancers.ogv" type="video/ogv">
+        <video playsinline autoplay muted loop poster="static/assets/images/dancers.jpg" id="bgvideo">
+        <source src="static/assets/videos/dancers.mp4" type="video/mp4">
+        <source src="static/assets/videos/dancers.webm" type="video/webm"> 
+        <source src="static/assets/videos/dancers.ogv" type="video/ogv">
         </video>
     </header>
 
@@ -205,8 +205,8 @@
     <div class="popup">
         <div class="popup_content">
             <div class="popup_left">
-                <img src="assets/images/rosalia-1.jpg" alt="artist photo" class="popup_img">
-                <img src="assets/images/rosalia-2.jpg" alt="artist photo" class="popup_img">
+                <img src="static/assets/images/rosalia-1.jpg" alt="artist photo" class="popup_img">
+                <img src="static/assets/images/rosalia-2.jpg" alt="artist photo" class="popup_img">
             </div>
             <div class="popup_right">
                 <h2 class="heading-secondary u-margin-bottom-medium">Rosalía</h2>
