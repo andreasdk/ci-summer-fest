@@ -33,12 +33,41 @@ body {
 
 /*Headings*/
 
-.heading-secondary {
+.heading-primary {
+  color: var(--lightcolor);
+  margin-bottom: 6rem;
+  margin-left: 2.25rem;
+  text-transform: uppercase;
+}
 
-    color: var(--primarycolor);
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
+.heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  margin-top: 12rem;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.45rem;
+  margin-left: -1.5rem;
+}
+
+.heading-secondary {
+  color: var(--primarycolor);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heading-tertiary {
+  color: var(--secondarycolor);
+  font-size: 1.8rem;
+  font-weight:700;
+  text-transform: uppercase;
 }
 
 /*Buttons*/
@@ -131,21 +160,19 @@ body {
 }
 
 /* Hero */
-video #bgvideo {
-position: fixed;
-top: 50%;
-left: 50%;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
--ms-transform: translateX(-50%) translateY(-50%);
--moz-transform: translateX(-50%) translateY(-50%);
--webkit-transform: translateX(-50%) translateY(-50%);
-transform: translateX(-50%) translateY(-50%);
-background: url(assets/images/dancers.jpg) no-repeat;
-background-size: cover;
+.header {
+  background-image: linear-gradient(to right bottom, rgba(70, 52, 78, 0.8), rgba(90, 85, 96, 0.8)), url(../images/dancers.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 95vh; 
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left:50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 /* Footer styles */

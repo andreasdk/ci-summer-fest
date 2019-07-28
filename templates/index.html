@@ -7,21 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CI Summer Fest</title>
 
-
-    <div class="container">
-        {% include 'includes/_login.html'%}
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
-          Login
-        </button>
-        
-        {% include 'includes/_register.html'%}
-         <!--Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">
-          Register
-        </button>        
-    </div>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
@@ -61,15 +46,29 @@
 				</li>
 			</ul>
 		</div>
+		<div class="container">
+        {% include 'includes/_login.html'%}
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
+          Login
+        </button>
+        
+        {% include 'includes/_register.html'%}
+         <!--Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">
+          Register
+        </button>        
+    </div>
 	</nav>
 	
 	<!--Hero Section-->
 	<header class="header">
-	    <video playsinline autoplay muted loop poster="assets/images/dancers.jpg" id="bgvideo">
-        <source src="assets/videos/dancers.mp4" type="video/mp4">
-        <source src="assets/videos/dancers.webm" type="video/webm"> 
-        <source src="assets/videos/dancers.ogv" type="video/ogv">
-        </video>
+		<div class="text-box">
+			<h1 class="heading-primary">
+				<span class="heading-primary-main">CI Summer Festival</span>
+				<span class="heading-primary-sub">The Party Starts Here</span>
+			</h1>
+		</div>	
 	</header>
     
     
