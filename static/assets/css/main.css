@@ -176,13 +176,6 @@
 
     /* Hero */
 
-    .header {
-        background-image: linear-gradient(to right bottom, rgba(70, 52, 78, 0.8), rgba(90, 85, 96, 0.8)), url(../images/dancers.jpg);
-        background-position: center center;
-        background-size: cover;
-        height: 95vh;
-    }
-
     .text-box {
         position: absolute;
         top: 40%;
@@ -190,6 +183,18 @@
         text-align: center;
         transform: translate(-50%, -50%);
     }
+
+.header {
+    background-image: linear-gradient(to right bottom, rgba(70, 52, 78, 0.8), rgba(90, 85, 96, 0.8)), url(../images/dancers.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
 
 
     /* Footer styles */
@@ -310,6 +315,7 @@
 
     /* map*/
 
+
 #map {
   height: 50rem; 
 }
@@ -322,3 +328,28 @@
     padding: 2rem 2rem;
     width: 100%; 
 }
+
+    #map {
+        min-height: 400px;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-bottom: 90px;
+    }
+    section {
+        text-align: center;
+    }
+    /* section background*/
+    #contactus {
+        background-color: #daa62b;
+    }
+    #location {
+        background-color: greenyellow;
+        height: 100vh;
+    }
+    /*margin right left body*/
+
+    
+    .form-main {
+        margin-top: 10rem;
+    }
+
