@@ -1,4 +1,5 @@
 from flask import Flask, render_template, flash, request, redirect, url_for, session
+import os
 
 from flask_mysqldb import MySQL
 from wtforms import Form, StringField, PasswordField, validators
@@ -125,5 +126,7 @@ def logout():
 
 if __name__ == '__main__':
     app.secret_key = 'secret123'
-    app.run(debug=True)
+    app.run(host=os.environ.get('IP'),
+            port=int(os.environ.get('PORT')),
+            debug=True)
 
