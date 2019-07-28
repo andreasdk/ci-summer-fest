@@ -2,3 +2,5 @@
 .git
 .assets/.DS_Store
 .venv
+.DS_Store
+.idea
