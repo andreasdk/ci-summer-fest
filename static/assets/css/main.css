@@ -349,6 +349,11 @@
         height: 100vh;
         padding-top: 4rem;
     }
+    
+    #lineup {
+        height: 100vh;
+        padding-top: 4rem;
+    }
     /*margin right left body*/
 
     
@@ -361,3 +366,11 @@
     padding: 1rem;
 }
 
+dl, ol, ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.u-margin-bottom-large {
+    margin-bottom: 4rem;
+}
