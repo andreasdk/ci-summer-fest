@@ -201,16 +201,7 @@ footer div div ul li i {
     font-size: 36px;
 }
 
-.popup {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9999;
-    opacity: 0;
-    visibility: hidden;
+
 
 .popup_content {
     border-radius: 3px;
@@ -261,3 +252,52 @@ footer div div ul li i {
         justify-content: center;
     }
 }
+
+
+/* map&contact foam*/
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+/* map*/
+
+#map{
+    min-height: 400px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+    border:4px solid orange;
+}
+
+
+
+
+/* section background*/
+
+#contactus {
+    background-color: #daa62b;
+    width: 100%;
+    text-align:center;
+    
+}
+
+#location {
+    
+   
+    height: 500px
+}
+
+
+/*text fonts*/
+
+
+h2{
+    font-family: 'Eagle Lake', cursive;
+    text-align: center;
+}
+div#map {min-height: 360px;}
+
+
