@@ -70,7 +70,6 @@ body {
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
-=======
   color: var(--backgroundcolor);
   font-size: 1.8rem;
   font-weight:700;
@@ -262,6 +261,9 @@ footer div div ul li i {
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
+    
+}
+
     .popup_content {
         border-radius: 3px;
         display: table;
