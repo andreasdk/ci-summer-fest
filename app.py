@@ -122,6 +122,13 @@ def logout():
     session.clear()
     flash('You are now logged out', 'success')
     return redirect(url_for('login'))
+    
+    
+@app.route('/mail.php',  methods=['POST', 'GET'])
+def send_mail():
+    """Route for sending mail for the contact form"""
+    flash('Thanks your message has been sent')
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':
