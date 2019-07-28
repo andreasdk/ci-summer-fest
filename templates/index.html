@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+	<!--Hero Section-->
+	<header class="header">
+	    <video playsinline autoplay muted loop poster="assets/images/dancers.jpg" id="bgvideo">
+        <source src="../assets/videos/dancers.mp4" type="video/mp4">
+        <source src="../assets/videos/dancers.webm" type="video/webm">
+        <source src="../assets/videos/dancers.ogv" type="video/ogv">
+        </video>
+	</header>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="footer-social-icons">
+                    <li class="list-icon"><i class="fab fa-twitter"></i></li>
+                    <li class="list-icon"><i class="fab fa-spotify"></i></li>
+                    <li class="list-icon"><i class="fab fa-instagram"></i></li>
+                    <li class="list-icon"><i class="fab fa-facebook"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal popup -->
+
+    <div class="popup">
+        <div class="popup_content">
+            <div class="popup_left">
+                <img src="assets/images/rosalia-1.jpg" alt="artist photo" class="popup_img">
+                <img src="assets/images/rosalia-2.jpg" alt="artist photo" class="popup_img">
+            </div>
+            <div class="popup_right">
+                <h2 class="heading-secondary u-margin-bottom-medium">Rosalía</h2>
+                <p class="popup_text">Rosalía always had a vision: to open an unexplored path based on the flamenco tradition but that completely redefines new pop music.
+                At a time where linguistic barriers are breaking down and non-English spoken music is acquiring global predominance, this artist from Sant Esteve Sesrovires has not settled with reinventing a conceptual imagery and aesthetic,
+                but has also gone for boundless transcendental experimentation hand in hand with El Guincho.</p>
+                <a href="https://open.spotify.com/album/355bjCHzRJztCzaG5Za4gq" class="btn btn--green">Stream Now</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
