@@ -1,10 +1,6 @@
-<html lang="en">
+{% extends 'layout.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CI Summer Fest</title>
+{% block body %}
 
 
     <!-- Bootstrap -->
@@ -23,8 +19,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
 
 
 </head>
@@ -70,7 +64,6 @@
     <section id="location" .z-depth-5>
         <h2>WHERE IS IT</h2>
         <div id="map"></div>
-
     </section>
 
 
@@ -180,13 +173,6 @@
 
     <!--end frankkode-->
 
-
-
-
-
-
-
-
     <footer class="container">
         <div class="row">
             <div class="col-12">
@@ -210,12 +196,18 @@
             </div>
             <div class="popup_right">
                 <h2 class="heading-secondary u-margin-bottom-medium">Rosalía</h2>
-                <p class="popup_text">Rosalía always had a vision: to open an unexplored path based on the flamenco tradition but that completely redefines new pop music. At a time where linguistic barriers are breaking down and non-English spoken music is acquiring global
-                    predominance, this artist from Sant Esteve Sesrovires has not settled with reinventing a conceptual imagery and aesthetic, but has also gone for boundless transcendental experimentation hand in hand with El Guincho.</p>
+
+                <p class="popup_text">Rosalía always had a vision: to open an unexplored path based on the flamenco tradition but that completely redefines new pop music.
+                At a time where linguistic barriers are breaking down and non-English spoken music is acquiring global predominance, this artist from Sant Esteve Sesrovires has not settled with reinventing a conceptual imagery and aesthetic,
+                but has also gone for boundless transcendental experimentation hand in hand with El Guincho.</p>
+              
                 <a href="https://open.spotify.com/album/355bjCHzRJztCzaG5Za4gq" class="btn btn--green">Stream Now</a>
             </div>
         </div>
     </div>
+
+{% endblock %}
+
 
     <!--map script-->
 
@@ -277,9 +269,6 @@
         }
     </script>
 
-
-
-
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA6pdCrVsqA6Rtqsj4NdUhnxN4kLAmQtAM&callback=initMap">
@@ -293,13 +282,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
-
-
-
-
-
-
-
 
 
     <!-- Bootstrap -->

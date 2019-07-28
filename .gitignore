@@ -1,8 +1,2 @@
 *.c9
 .git
-.c9/
-.c9/metadata/environment/.gitignore
-.c9/metadata/environment/app.py
-.c9/metadata/environment/templates/index.html
-.c9/metadata/tab1
-.c9/metadata/tab2
