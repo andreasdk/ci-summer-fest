@@ -310,9 +310,15 @@
 
     /* map*/
 
-    #map {
-        min-height: 400px;
-        max-width: 1000px;
-        margin: 0 auto;
-        margin-bottom: 90px;
-    }
+#map {
+  height: 50rem; 
+}
+
+
+.text-input {
+    font-family: inherit;
+    font-size: 5rem;
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    width: 100%; 
+}
