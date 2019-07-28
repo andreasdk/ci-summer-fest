@@ -333,14 +333,10 @@ footer div div ul li i {
     }
     #location {
         background-color: greenyellow;
-        height: 500px
+        height: 100vh;
     }
     /*margin right left body*/
-    section {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
+
     
     .form-main {
         margin-top: 10rem;
