@@ -407,7 +407,7 @@
     /*margin right left body*/
 
     .form-main {
-        margin-top: 10rem;
+        margin-top: 10rem !important;
     }
 
     .form-group {

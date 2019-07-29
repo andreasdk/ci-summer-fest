@@ -9,7 +9,7 @@ from functools import wraps
 app = Flask(__name__)
 
 # config MySQL
-app.config['MYSQL_HOST'] = '127.0.0.1'
+app.config['MYSQL_HOST'] = 'mysql://b14248473ab60f:684cf3aa@eu-cdbr-west-02.cleardb.net/heroku_94d532c162315ba?reconnect=true'
 app.config['MYSQL_PORT'] = 3306
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
