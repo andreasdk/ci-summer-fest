@@ -129,7 +129,12 @@ def send_mail():
     """Route for sending mail for the contact form"""
     flash('Thanks your message has been sent')
     return redirect(url_for('index'))
-
+    
+@app.route('/buy', methods=['POST'])
+def buy():
+    """Route for purchasing a ticket"""
+    flash("Thank you for your payment, your ticket is purchased!")
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.secret_key = 'secret123'
